@@ -11,8 +11,6 @@ const Home = () => {
 
   const [playerName, setPlayerName] = useState('');
 
-  console.log(contract);
-
   const handleClick = async () => {
     try {
       const playerExists = await contract.isPlayer(walletAddress);
